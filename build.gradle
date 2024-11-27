@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id("io.freefair.lombok") version "8.11"
+}
+
+group = 'ru.netology'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.1.0'
+}
+
+test {
+    useTestNG()
+}
+
